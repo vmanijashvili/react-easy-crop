@@ -131,13 +131,13 @@ class App extends React.Component<{}, State> {
   }
 
   onCropComplete = (croppedArea: Area, croppedAreaPixels: Area) => {
-    console.log('onCropComplete!', croppedArea, croppedAreaPixels)
+    //console.log('onCropComplete!', croppedArea, croppedAreaPixels)
 
     this.setState({ croppedArea, croppedAreaPixels }, this.updateHash)
   }
 
   onCropAreaChange = (croppedArea: Area, croppedAreaPixels: Area) => {
-    console.log('onCropAreaChange!', croppedArea, croppedAreaPixels)
+    //console.log('onCropAreaChange!', croppedArea, croppedAreaPixels)
 
     this.setState({ croppedArea, croppedAreaPixels })
   }
@@ -159,11 +159,11 @@ class App extends React.Component<{}, State> {
   }
 
   onInteractionStart = () => {
-    console.log('user interaction started')
+    //console.log('user interaction started')
   }
 
   onInteractionEnd = () => {
-    console.log('user interaction ended')
+    //console.log('user interaction ended')
   }
 
   onHashTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
